@@ -11,7 +11,11 @@ class Being {
   }
 
   updateCredits(credits) {
-    this.credits += credits;    
+    this.credits += credits;
+  }
+
+  reduceCredits(credits) {
+    this.credits -= credits;    
   }
 }
 
