@@ -3,6 +3,7 @@ class Part  {
     obj = obj || {};
     this.name = obj.name;
     this.type = obj.type;
+    this.value = obj.value;
   }
 }
 
