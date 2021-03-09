@@ -68,7 +68,7 @@ describe('Part', function() {
     assert.equal(computer.broken, false);
   });
 
-  it.skip('should have a name to be considered valid', function() {
+  it('should have a name to be considered valid', function() {
     var computer = new Part(
       {
         type: 'computer',
