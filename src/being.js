@@ -15,7 +15,7 @@ class Being {
   }
 
   reduceCredits(credits) {
-    this.credits -= credits;    
+    this.credits -= credits;
   }
 }
 
