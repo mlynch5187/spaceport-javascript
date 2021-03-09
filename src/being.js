@@ -5,6 +5,10 @@ class Being {
     this.species = species;
     this.credits = 0;
   }
+
+  addCredits(credits)  {
+    this.credits += credits;
+  }
 }
 
 module.exports = Being;
