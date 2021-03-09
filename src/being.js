@@ -1,6 +1,7 @@
 class Being {
-  constructor() {
+  constructor(name) {
     this.isAlive = true;
+    this.name = name;
   }
 }
 
