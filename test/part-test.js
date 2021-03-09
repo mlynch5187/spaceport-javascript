@@ -56,7 +56,7 @@ describe('Part', function() {
     assert.equal(computer.value, 300);
   });
 
-  it.skip('should be not broken by default', function() {
+  it('should be not broken by default', function() {
     var computer = new Part(
       {
         name: 'Alienware 550x',

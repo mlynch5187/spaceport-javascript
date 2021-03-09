@@ -4,6 +4,7 @@ class Part  {
     this.name = obj.name;
     this.type = obj.type;
     this.value = obj.value;
+    this.broken = false;
   }
 }
 
