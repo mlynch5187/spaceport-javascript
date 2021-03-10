@@ -10,6 +10,11 @@ class Ship  {
     } else {
       this.odometer = obj.odometer;
     }
+    if (obj.fuelCapacity === undefined) {
+      this.fuelCapacity = 10;
+    } else {
+      this.fuelCapacity = obj.fuelCapacity;
+    }
   }
 }
 

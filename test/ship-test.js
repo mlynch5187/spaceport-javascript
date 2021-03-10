@@ -73,7 +73,7 @@ describe('Ship', function() {
     assert.equal(fighter.fuelCapacity, 10);
   });
 
-  it.skip('should be able to be initialized with a different fuel capacity', function() {
+  it('should be able to be initialized with a different fuel capacity', function() {
     var fighter = new Ship(
       {
         name: 'Atlantis',
