@@ -5,6 +5,7 @@ class Ship  {
     this.type = obj.type;
     this.maxCrew = obj.maxCrew;
     this.fuelCapacity = 0;
+    this.fuel = 0;
     if (obj.odometer === undefined) {
       this.odometer = 0;
     } else {
