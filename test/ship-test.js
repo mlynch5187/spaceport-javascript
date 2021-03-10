@@ -60,7 +60,7 @@ describe('Ship', function() {
     assert.equal(shuttle.odometer, 0);
   });
 
-  it.skip('should have a fuel capacity of 10 by default', function() {
+  it('should have a fuel capacity of 10 by default', function() {
     var fighter = new Ship(
       {
         name: 'Atlantis',
