@@ -4,6 +4,7 @@ class Ship  {
     this.name = obj.name;
     this.type = obj.type;
     this.maxCrew = obj.maxCrew;
+    this.odometer = 0;
   }
 }
 
