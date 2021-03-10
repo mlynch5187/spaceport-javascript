@@ -15,6 +15,10 @@ class Part  {
       this.checkForValidity = 'This part needs a type!';
       this.isValid = false;
     }
+    if (obj.value === undefined) {
+      this.checkForValidity = 'This part needs a value!';
+      this.isValid = false;
+    }
   }
 }
 
