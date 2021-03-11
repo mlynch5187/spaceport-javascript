@@ -5,6 +5,7 @@ class Ship  {
     this.type = obj.type;
     this.captain = obj.captain;
     this.maxCrew = obj.maxCrew;
+    this.crew = [];
     this.fuelCapacity = 0;
     this.fuel = 0;
     if (obj.odometer === undefined) {
@@ -16,6 +17,12 @@ class Ship  {
       this.fuelCapacity = 10;
     } else {
       this.fuelCapacity = obj.fuelCapacity;
+    }
+  }
+
+    addCrew(crew) {
+      for (var i = 0; i < crew.length; i++) {        
+        this.crew.push(crew[i]);
     }
   }
 }
