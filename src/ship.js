@@ -3,6 +3,7 @@ class Ship  {
     obj = obj || {};
     this.name = obj.name;
     this.type = obj.type;
+    this.captain = obj.captain;
     this.maxCrew = obj.maxCrew;
     this.fuelCapacity = 0;
     this.fuel = 0;
