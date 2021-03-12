@@ -22,10 +22,10 @@ class Ship  {
     }
   }
 
-    addCrew(crew) {
-      for (var i = 0; i < crew.length; i++) {
-        if (this.crew.length < this.maxCrew && crew[i].constructor.name === 'Being') {
-          this.crew.push(crew[i]);
+  addCrew(crew) {
+    for (var i = 0; i < crew.length; i++) {
+      if (this.crew.length < this.maxCrew && crew[i].constructor.name === 'Being') {
+        this.crew.push(crew[i]);
       }
     }
   }
@@ -42,6 +42,16 @@ class Ship  {
     }
     this.parts[part.type] = part;
     return oldValue - part.value
+  }
+
+  checkReadiness() {
+    if (this.captain === undefined) {
+      this.readyToFly = false;
+      return `Cannot fly without a captain`
+    } else {
+      this.readyToFly = true;
+      return `Good to go!`
+    }
   }
 }
 

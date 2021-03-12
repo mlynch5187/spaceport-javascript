@@ -310,7 +310,7 @@ describe('Ship', function() {
     assert.deepEqual(fighter.parts.hyperdrive, hyperdrive);
   });
 
-  it.skip('should be able to replace an existing part and return the difference in value', function() {
+  it('should be able to replace an existing part and return the difference in value', function() {
     var parts = {
       shell: new Part({ name: 'XC-Wing', type: 'shell', value: 8000 }),
       computer: new Part({ name: 'Starmapper', type: 'computer', value: 300 }),
@@ -332,7 +332,7 @@ describe('Ship', function() {
     assert.equal(difference, -1000);
   });
 
-  it.skip('should be able replace another existing part and return the difference in value', function() {
+  it('should be able replace another existing part and return the difference in value', function() {
     var parts = {
       shell: new Part({ name: 'XC-Wing', type: 'shell', value: 8000 }),
       computer: new Part({ name: 'Starmapper', type: 'computer', value: 300 }),
@@ -354,7 +354,7 @@ describe('Ship', function() {
     assert.equal(difference, 2500);
   });
 
-  it.skip('should not be able to fly without a captain', function() {
+  it('should not be able to fly without a captain', function() {
     var fighter = new Ship(
       {
         name: 'Atlantis',
@@ -366,7 +366,7 @@ describe('Ship', function() {
 
     var status = fighter.checkReadiness();
 
-    assert.isFalse(status.readyToFly);
+    assert.isFalse(fighter.readyToFly);
     assert.equal(status, 'Cannot fly without a captain');
   });
 
