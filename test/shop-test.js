@@ -13,7 +13,7 @@ describe('Shop', function() {
     assert.equal(shop2.name, 'Conogo');
   });
 
-  it.skip('should have no inventory by default', function() {
+  it('should have no inventory by default', function() {
     var newShop = new Shop({ name: 'Conogo' });
 
     assert.deepEqual(newShop.inventory, {});
