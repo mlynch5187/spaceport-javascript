@@ -21,8 +21,10 @@ class Ship  {
   }
 
     addCrew(crew) {
-      for (var i = 0; i < crew.length; i++) {        
-        this.crew.push(crew[i]);
+      for (var i = 0; i < crew.length; i++) {
+        if (this.crew.length < this.maxCrew) {
+          this.crew.push(crew[i]);
+      }   
     }
   }
 }
