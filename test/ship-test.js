@@ -271,7 +271,7 @@ describe('Ship', function() {
     assert.deepEqual(fighter.parts, {});
   });
 
-  it.skip('should be able to be initialized with parts', function() {
+  it('should be able to be initialized with parts', function() {
     var parts = {
       shell: new Part({ name: 'XC-Wing', type: 'shell', value: 8000 }),
       computer: new Part({ name: 'Starmapper', type: 'computer', value: 300 }),
