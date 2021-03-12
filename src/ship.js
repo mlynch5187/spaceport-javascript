@@ -5,6 +5,7 @@ class Ship  {
     this.type = obj.type;
     this.captain = obj.captain;
     this.maxCrew = obj.maxCrew;
+    this.parts = {};
     this.crew = [];
     this.cargo = [];
     this.fuelCapacity = 0;
