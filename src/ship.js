@@ -22,9 +22,9 @@ class Ship  {
 
     addCrew(crew) {
       for (var i = 0; i < crew.length; i++) {
-        if (this.crew.length < this.maxCrew) {
+        if (this.crew.length < this.maxCrew && crew[i].constructor.name === 'Being') {
           this.crew.push(crew[i]);
-      }   
+      }
     }
   }
 }
