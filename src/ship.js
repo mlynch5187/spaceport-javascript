@@ -45,12 +45,16 @@ class Ship  {
   }
 
   checkReadiness() {
+    console.log(this.parts)
     if (this.captain === undefined) {
       this.readyToFly = false;
-      return `Cannot fly without a captain`
+      return `Cannot fly without a captain`;
     } else if (this.fuel === 0) {
       this.readyToFly = false;
-      return `Cannot fly without fuel`
+      return `Cannot fly without fuel`;
+    } else if (!Object.keys(this.parts).length) {
+      this.readyToFly = false;
+      return `Cannot fly without parts`
     } else {
       this.readyToFly = true;
       return `Good to go!`
