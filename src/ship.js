@@ -48,6 +48,9 @@ class Ship  {
     if (this.captain === undefined) {
       this.readyToFly = false;
       return `Cannot fly without a captain`
+    } else if (this.fuel === 0) {
+      this.readyToFly = false;
+      return `Cannot fly without fuel`
     } else {
       this.readyToFly = true;
       return `Good to go!`
