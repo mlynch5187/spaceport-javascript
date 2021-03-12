@@ -209,7 +209,7 @@ describe('Ship', function() {
     assert.deepEqual(fighter.crew, []);
   });
 
-  it.skip('should not have any cargo by default', function() {
+  it('should not have any cargo by default', function() {
     var fighter = new Ship(
       {
         name: 'Atlantis',

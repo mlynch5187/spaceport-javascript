@@ -6,6 +6,7 @@ class Ship  {
     this.captain = obj.captain;
     this.maxCrew = obj.maxCrew;
     this.crew = [];
+    this.cargo = [];
     this.fuelCapacity = 0;
     this.fuel = 0;
     if (obj.odometer === undefined) {
