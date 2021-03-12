@@ -30,10 +30,9 @@ class Ship  {
   }
 
   loadCargo(load) {
-    // for (var i = 0; i < load.length; i++) {
-      // if (this.crew.length < this.maxCrew && crew[i].constructor.name === 'Being') {
-        this.cargo.push(load);
-    // }
+    if (load.constructor.name === 'Part') {
+      this.cargo.push(load)
+    }
   }
 }
 

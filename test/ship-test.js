@@ -239,7 +239,7 @@ describe('Ship', function() {
     assert.equal(fighter.cargo.length, 1);
   });
 
-  it.skip('should only be able to load cargo that is a Part', function() {
+  it('should only be able to load cargo that is a Part', function() {
     var partCargo = new Part({ name: 'Dell', type: 'computer', value: 100 });
     var fighter = new Ship(
       {
