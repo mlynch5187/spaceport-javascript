@@ -1,3 +1,5 @@
+var Part = require('../src/part');
+
 class Shop  {
   constructor(obj) {
     obj = obj || {};
@@ -6,7 +8,10 @@ class Shop  {
   }
 
   addInventory(item)  {
-    this.inventory[item.type] = item;
+    if (item instanceof Part) {
+      this.inventory[item.type] = item;
+
+    }
   }
 }
 
