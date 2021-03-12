@@ -222,7 +222,7 @@ describe('Ship', function() {
     assert.deepEqual(fighter.cargo, []);
   });
 
-  it.skip('should be able to load cargo', function() {
+  it('should be able to load cargo', function() {
     var partCargo = new Part({ name: 'Dell', type: 'computer', value: 100 });
     var fighter = new Ship(
       {
