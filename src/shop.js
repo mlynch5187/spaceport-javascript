@@ -14,8 +14,11 @@ class Shop  {
   }
 
   outfitShip(ship, part)  {
-    if (this.captain === undefined) {
-      return `cannot outfit a ship without a captian`
+    if (ship.captain === undefined) {
+      return `cannot outfit a ship without a captain`
+    }
+    if (ship.captain.credits < part.value)  {
+      return `you require 200 more credits to make this purchase`
     }
   }
 }
