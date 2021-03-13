@@ -16,6 +16,10 @@ class Planet  {
     console.log(planet.coordinates)
     return Math.sqrt((planet.coordinates['x'] ** 2) + (planet.coordinates['y'] ** 2) + (planet.coordinates['z'] ** 2))
   }
+
+  refuel(ship)  {
+    ship.fuel = ship.fuelCapacity
+  }
 }
 
 module.exports = Planet;
