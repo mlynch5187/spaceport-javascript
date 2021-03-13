@@ -4,7 +4,8 @@ class Planet  {
   constructor(obj) {
     obj = obj || {};
     this.name = obj.name;
-    this.shop = obj.shop
+    this.coordinates = obj.coordinates;
+    this.shop = obj.shop;
   }
 
   landShip(ship)  {
