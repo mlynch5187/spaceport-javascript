@@ -24,6 +24,11 @@ class Planet  {
   giveClearance(planet) {
     if (this.currentShip.fuel === 0)  {
       return "Clearance denied: Cannot fly without fuel"
+    } else {
+      this.currentShip.fuel = 0;
+      planet.currentShip = this.currentShip
+      this.currentShip = undefined
+      return `Clearance granted: Enjoy your trip to ${planet.name}`
     }
   }
 }

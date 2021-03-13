@@ -130,7 +130,7 @@ describe('Planet', function() {
     assert.equal(result, "Clearance denied: Cannot fly without fuel")
   });
 
-  it.skip('should be able send a ship to another planet', function() {
+  it('should be able send a ship to another planet', function() {
     var planet = new Planet({ name: 'F2', coordinates: { x: 0, y: 0, z: 0 } });
     var otherPlanet = new Planet({ name: 'M2', coordinates: { x: 1, y: 1, z: 1 }});
     var captian = new Being('Will', 'human');
