@@ -20,6 +20,12 @@ class Planet  {
   refuel(ship)  {
     ship.fuel = ship.fuelCapacity
   }
+
+  giveClearance(planet) {
+    if (this.currentShip.fuel === 0)  {
+      return "Clearance denied: Cannot fly without fuel"
+    }
+  }
 }
 
 module.exports = Planet;

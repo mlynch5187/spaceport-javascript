@@ -102,7 +102,7 @@ describe('Planet', function() {
     assert.equal(fighter.fuel, fighter.fuelCapacity);
   });
 
-  it.skip('should not be able to send a ship to another planet if it is has no fuel', function() {
+  it('should not be able to send a ship to another planet if it is has no fuel', function() {
     var planet = new Planet({ name: 'F2', coordinates: { x: 0, y: 0, z: 0 } });
     var otherPlanet = new Planet({ name: 'M2', coordinates: { x: 1, y: 1, z: 1 }});
     var captian = new Being('Will', 'human');
