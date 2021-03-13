@@ -20,6 +20,12 @@ class Shop  {
     if (ship.captain.credits < part.value)  {
       return `you require 200 more credits to make this purchase`
     }
+    if (ship.captain.credits >= part.value)  {
+      ship.captain.credits = (ship.captain.credits) -= (part.value)
+      ship.parts[part.type] = part
+      this.inventory -= part
+      return `${part.type} added to ship`
+    }
   }
 }
 
