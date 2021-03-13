@@ -11,6 +11,11 @@ class Planet  {
   landShip(ship)  {
     this.currentShip = ship
   }
+
+  calculateDistance(planet) {
+    console.log(planet.coordinates)
+    return Math.sqrt((planet.coordinates['x'] ** 2) + (planet.coordinates['y'] ** 2) + (planet.coordinates['z'] ** 2))
+  }
 }
 
 module.exports = Planet;
