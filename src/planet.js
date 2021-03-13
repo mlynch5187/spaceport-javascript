@@ -6,6 +6,10 @@ class Planet  {
     this.name = obj.name;
     this.shop = obj.shop
   }
+
+  landShip(ship)  {
+    this.currentShip = ship
+  }
 }
 
 module.exports = Planet;
